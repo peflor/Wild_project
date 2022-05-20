@@ -10,7 +10,7 @@
     <title>Argonautes</title>
 </head>
 <body>
-    <h1 class= "text-center my-5">Jason et la Toison d'Or</h1>
+    <h1 class= "text-center text-light my-5">La futur équipe</h1>
 
     <?= $content ?>
     

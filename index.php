@@ -17,24 +17,26 @@
         </div>
     </div>
 </div>
-<div class="card text-center shadow my-1 col-4">
-    <div class="card-header bg-dark text-white ">
-        <h5 class="card-title">Nom</h5>
-    </div>
-    <div class="card-body">
-        <div class="row text-center justify-items-center">
-        <form class="col-4" action="partials/delete.car.php" method="POST" onSubmit="return confirm('Êtes-vous certain de vouloir supprimer ce véhicule ?')">
-            <input hidden type="text" name="carID" value="">
-            <button class="btn btn-danger " type="submit" title="Supprimer"><i class="fas fa-trash-alt"></i></button>
-        </form>
-        <form class="col-4" action="partials/edit.car.php" method="POST">
-            <input hidden type="text" name="carID" value="">
-            <button class="btn btn-success" type="submit" title="Modifier"><i class="fas fa-edit"></i></button>
-        </form>
-        </div>
-    </div>
+<div class="card text-center shadow my-5 col-3">
+<table class="table table-hover text-center">
+    <thead class="table-dark">
+        <tr>
+            <th>Nom</th>
+            <th>Modifier</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>blavla</td>
+            <td><a href=""><i class="fas fa-edit"></i></a></td>
+        </tr>
+    </tbody> 
+    </table>
+    <form action="" method="post" onSubmit=" return confirm('Êtes-vous certain de vouloir supprimer ce jeu ?')">
+        <button class="btn btn-danger mb-2" type="submit">supprimer</button>
+    </form>
 </div>
-<hr>
+
 
 <?php 
     $content= ob_get_clean();
