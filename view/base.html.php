@@ -10,7 +10,8 @@
     <title>Argonautes</title>
 </head>
 <body>
-    <h1 class= "text-center text-light my-5">La futur équipe</h1>
+
+    <h1 class= "text-center text-light my-5">Bienvenue a bord !!</h1>
 
     <?= $content ?>
     
