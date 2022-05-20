@@ -12,8 +12,9 @@
             <tr>
                 <td><?= ucwords($argo["name"])?></td>
                 <td>
-                    <form action="" method="post" onSubmit=" return confirm('Êtes-vous certain de vouloir supprimer ce jeu ?')">
-                        <a href=""><i class="fas fa-trash"></i></a>
+                    <form action="partials/delete.argo.php" method="post" onSubmit=" return confirm('Êtes-vous certain de vouloir supprimer cet Argonaute ??')">
+                    <input hidden type="text" name="id" >
+                    <button class="btn" type="submit"><i class="fas fa-trash"></i></button>
                     </form>
                 </td>
             </tr>

@@ -1,15 +1,15 @@
 <?php
 
-$idArgo = $_POST["ID"];
+$idArgo = $_POST["id"];
 
 
     $bdd = new PDO('mysql:host=localhost;dbname=argo', "root", "");
-    $req = "DELETE FROM users WHERE ID= :id";
+    $req = "DELETE FROM users WHERE id = :id";
     $stmt = $bdd->prepare($req);
-    $stmt->bindValue(":id", PDO::PARAM_INT);
+    $stmt->bindValue(":id", $idArgo, PDO::PARAM_INT);
     $result = $stmt->execute();
     $stmt->closeCursor();
 
     if($result) {
-        header("Location: ../cars.php"); 
+        header("Location: ../index.php"); 
     }
