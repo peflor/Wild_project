@@ -12,27 +12,25 @@
     <title>Argonautes</title>
 </head>
 <body>
+    <header>
+        <h1 class= "text-light text-center p-5">Bienvenue a bord Argonautes!!</h1>
+    </header>
 
-    <h1 class= "text-center text-light my-5">Bienvenue a bord !!</h1>
 <div class="container">
     <div class="row justify-content-center">
-        <div class="card shadow col-4 p-2">
+        <div class="card shadow col-4 p-2 mb-5">
             <form action="partials/new.argo.php" method="POST" class="my-1 text-center">
             <div class="form-group ">
                 <label for="name">Ajouter un(e) Argonaute</label>
                 <input type="text" name="name" class="form-control" id="name"  required>            
             </div>
-            <!-- <div class="form-group mt-2">
-                <label for="paysorigine">Spécialité</label>
-                <input type="text" name="pays" class="form-control" id="paysorigine" required>            
-            </div> -->
             <button type="submit" class="btn btn-primary my-3 text-center"><i class="fas fa-plus-circle"></i> Ajouter</button>
             </form>
         </div>
     </div>
 </div>
 <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
             <?php foreach ($argos as $argo ):?>
                 <?php require "partials/argo.card.php" ?>
             <?php endforeach;?>

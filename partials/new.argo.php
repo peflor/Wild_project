@@ -3,7 +3,7 @@
 
 $argoName= $_POST["name"];
 
-$bdd = new PDO('mysql:host=localhost;dbname=argo', "root", "");
+$bdd = new PDO('mysql:host=localhost;dbname=argo', "root", "root");
 $req = "INSERT INTO users (name) VALUES (:name)";
             
 $stmt = $bdd->prepare($req);
