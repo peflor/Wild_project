@@ -10,7 +10,7 @@
         </thead>
         <tbody>
             <tr>
-                <td><?= ucwords($argo["name"])?></td>
+                <td class="h5"><?= ucwords($argo["name"])?></td>
                 <td>
                     <form action="partials/delete.argo.php" method="post" onSubmit=" return confirm('Êtes-vous certain de vouloir supprimer cet Argonaute ??')">
                     <input hidden type="text" name="id" value="<?=$argo['id']?> " >
