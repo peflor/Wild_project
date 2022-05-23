@@ -3,13 +3,11 @@
 require_once "bdd.php";
 
 
+$idArgo = $_POST["id"]; 
 $argoName= $_POST["name"];
 
-
-
-$req = "INSERT INTO users (name) VALUES (:name)";
-            
-$stmt = $bdd->prepare($req);
+$stmt = $bdd->prepare("UPDATE users SET name = :name WHERE id = :id");
+$stmt->bindValue(":id",$idArgo, PDO::PARAM_INT);
 $stmt->bindValue(":name",$argoName, PDO::PARAM_STR);
 $result = $stmt->execute();
 $stmt->closeCursor();

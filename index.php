@@ -12,8 +12,10 @@
     <title>Argonautes</title>
 </head>
 <body>
-
-    <h1 class= "text-center text-light my-5">Bienvenue a bord !!</h1>
+<header class="shadow m-3 p-3">
+    <h1 class= "text-center text-light mb-5">Bienvenue a bord !!</h1>
+    <p class= "text-center text-light  h5 my-5">Veuillez inscrire vos Argonautes sur la liste de l'équipage !!!</p>
+</header>
 <div class="container">
     <div class="row justify-content-center">
         <div class="card shadow col-4 p-2">
@@ -22,20 +24,18 @@
                 <label for="name">Ajouter un(e) Argonaute</label>
                 <input type="text" name="name" class="form-control" id="name"  required>            
             </div>
-            <!-- <div class="form-group mt-2">
-                <label for="paysorigine">Spécialité</label>
-                <input type="text" name="pays" class="form-control" id="paysorigine" required>            
-            </div> -->
             <button type="submit" class="btn btn-primary my-3 text-center"><i class="fas fa-plus-circle"></i> Ajouter</button>
             </form>
         </div>
     </div>
 </div>
 <div class="container">
-    <div class="row">
+    <div class="row mt-5">
             <?php foreach ($argos as $argo ):?>
                 <?php require "partials/argo.card.php" ?>
             <?php endforeach;?>
     </div>
 </div>
 
+</body>
+</html>
