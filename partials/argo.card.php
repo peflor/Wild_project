@@ -12,7 +12,7 @@
     <div class="col-2">    
         <form action="partials/delete.argo.php" method="post" onSubmit=" return confirm('Êtes-vous certain de vouloir supprimer cet Argonaute ??')">
         <input hidden type="text" name="id" value="<?= $argo["id"]?>" >
-        <button class="btn mt-1 text-danger" type="submit"><i class="fas fa-trash"></i></button>
+        <button class="btn mt-1 text-danger" type="submit" title="Supprimer"><i class="fas fa-trash"></i></button>
         </form>
     </div>    
 </div>
