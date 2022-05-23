@@ -18,7 +18,7 @@
 </header>
 <div class="container">
     <div class="row justify-content-center">
-        <div class="card shadow col-4 p-2">
+        <div class="card shadow col-4 p-2 mb-5">
             <form action="partials/new.argo.php" method="POST" class="my-1 text-center">
             <div class="form-group ">
                 <label for="name">Ajouter un(e) Argonaute</label>
